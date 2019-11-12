@@ -1,0 +1,18 @@
+<p>
+  property-binding works!
+</p>
+
+<input type="text" [value]="name">
+
+<div [hidden]=true> Use Of Property Binding </div><br>
+<div [hidden]="ishidden"> Use Of Property Binding Withhout Hard coded </div>
+<br>
+<div hidden="{{ishidden1}}"> Use of String Interpolation </div>
+
+<button disabled="{{ishidden1}}"> Click Using String Interpolation </button><br><br>
+
+<button [disabled]="ishidden" style="margin: 10px;"> Use Property Binding </button><br><br>
+
+<img [src]="imgurl" alt="" style="width: 200px;height: 200px;">
+
+

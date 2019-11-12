@@ -1,0 +1,13 @@
+img{
+    width: 500px;
+    height: 500px;
+}
+
+#myimg{
+    width: 200px;
+    height: 200px;
+}
+
+.myclass{
+    color:blue;
+}
