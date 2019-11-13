@@ -1,0 +1,24 @@
+.success{
+    color: green;    
+
+}
+
+.danger{
+    color: red;
+}
+
+.warning{
+    color: yellow;
+}
+
+.special{
+    font-style: italic;
+    font-size: 32px;
+}
+
+.on{
+    color: violet;
+}
+.off{
+    color: whitesmoke;
+}
