@@ -1,4 +1,4 @@
-<p>
+<!-- <p>
   eventbinding works!
 </p>
 
@@ -26,8 +26,40 @@
 
 <input type="text" (change)="onchange()" > <br><br>
 
-<input type="text" (change)="onchange1()" [style.background]="backcolor">
+<input type="text" (change)="onchange1()" [style.background]="backcolor"> <br><br>
 
+<button (click)="OnClickCount()">Click Count</button> -->
+
+<input type="text" (keyup)="onkeyup()" placeholder="Enter the Text...."> 
+{{dispMSG}}
+<br><br>
+
+<input type="text" (keydown)="onkeyDown()" placeholder="Enter the text !!!!!">
+{{dispMSG1}}
+<br><br><br>
+
+<button (click)="onRed()">Red</button>
+<button (click)="onGreen()">Green</button>
+<button (click)="onBlue()">Blue</button>
+<button (click)="onYellow()">yellow</button>
+<br><br><br>
+
+<div [style.background]="mycolor">
+
+</div> 
+
+
+<br><br><br>
+
+<button (click)="oncolorchange('red')">Red</button>
+<button (click)="oncolorchange('green')">Green</button>
+<button (click)="oncolorchange('blue')">Blue</button>
+<button (click)="oncolorchange('yellow')">yellow</button>
+<br><br><br>
+
+<div [style.background]="mycolor1">
+
+</div>
 
 
 

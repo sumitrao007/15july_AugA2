@@ -15,6 +15,16 @@ export class EventbindingComponent implements OnInit {
   num2:number=3;
   backcolor:string="";
 
+  count:number=0;
+  dispMSG="";
+  dispMSG1:string="";
+
+  myflag:boolean=true;
+
+  mycolor:string="white";
+
+  mycolor1:string="white";
+
   constructor() { }
 
   ngOnInit() {
@@ -47,5 +57,59 @@ export class EventbindingComponent implements OnInit {
   onchange1(){
     this.backcolor="yellow";
   }
+
+  OnClickCount(){
+    if(this.myflag==true){
+      // console.log("Event Occur!!!!");
+      this.myflag=false;
+      console.log("Event Occur!!!!");
+    }
+   
+  }
+
+  onkeyup(){
+
+    if(this.count<=7){
+      this.count=this.count+1;
+    }else{
+      this.dispMSG="Your Limit is Over!!!!";
+    }
+
+    //console.log("On Key Up Event occur!!!!");
+  }
+
+  onkeyDown(){
+
+
+    if(this.count<=7){
+      this.count=this.count+1;
+    }else{
+      this.dispMSG1="Your Limit is Over!!!!";
+    }
+  //  console.log("On Key Down Event Occur!!!!");
+  }
+
+
+  onRed(){
+    this.mycolor="red";
+  }
+
+  onGreen(){
+    this.mycolor="green";
+  }
+  onBlue(){
+    this.mycolor="blue";
+  }
+
+  onYellow(){
+    this.mycolor="yellow";
+  }
+
+
+  oncolorchange(value){
+    this.mycolor1=value;
+  }
+
+
 
 }
