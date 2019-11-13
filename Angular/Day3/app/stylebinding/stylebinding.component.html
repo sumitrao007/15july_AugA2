@@ -1,0 +1,20 @@
+<p>
+  stylebinding works!
+</p>
+
+<h1 style="color: aqua;">Inline CSS Apply</h1>
+
+<h2> External CSS Apply </h2>
+
+<hr>
+<h2> We see the Style Binding In Angular !!!!! </h2>
+
+<div [style.color]="mycolor" > Style Binding In Angular </div>
+
+<h1 [style.color]="rating<5?'red':'green'"> Rating of Your Component </h1>
+
+<h1 [style.color]="rating<5?mycolor1:mycolor2" > Apply Color Dynamically </h1>
+
+<h1 [ngStyle]="mystyle"> 
+  Apply Ng Style Binding - to Apply Multiple styles for single element 
+</h1>

@@ -1,0 +1,35 @@
+<p>
+  eventbinding works!
+</p>
+
+<button (click)="onclick()"> Apply Event Binding </button> 
+{{name}} <br>
+
+<br>
+<button (click)="onclick1()">Using Property Binding</button><br><br>
+<input type="text" [value]="name2"> <br><br>
+
+<button  (click)="mysquare=2*2" > Without Method we can Process data </button>
+<br>
+{{mysquare}} <br><br>
+
+
+<button  (click)="mysquare1=num1*num2" > Dynamic Without Method we can Process data </button>
+<br>
+{{mysquare1}} <br><br>
+
+
+<button (click)="clickMe($event)" > Click Me </button><br><br>
+
+<button (click)="clickMe1($event)" value="Click Me 1" > Click Me 1</button> <br>
+<hr>
+
+<input type="text" (change)="onchange()" > <br><br>
+
+<input type="text" (change)="onchange1()" [style.background]="backcolor">
+
+
+
+
+
+
