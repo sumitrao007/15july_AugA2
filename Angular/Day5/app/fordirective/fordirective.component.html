@@ -1,0 +1,110 @@
+<p>
+  fordirective works!
+</p>
+
+<!-- <ul>
+  <li *ngFor="let item of course" > {{item}}
+
+  </li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let item of course;index as i" > {{i}} {{item}}
+
+  </li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let item of course;first as f"> {{item}} &nbsp;&nbsp; {{f}}
+
+  </li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let item of course;last as l"> {{item}} &nbsp;&nbsp; {{l}}
+
+  </li>
+</ul> -->
+
+<!-- <hr>
+<ul>
+  <li *ngFor="let item of course;even as e"> {{item}} &nbsp;&nbsp; {{e}}
+
+  </li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let item of course;odd as o"> {{item}} &nbsp;&nbsp; {{o}}
+
+  </li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let item of course;even as e index as i" >
+    <div *ngIf="e==true"> {{i}} &nbsp; {{item}}
+    </div>
+
+  </li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let item of course;odd as o index as i" >
+    <div *ngIf="o==true"> {{i}} &nbsp; {{item}}
+    </div>
+
+  </li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let item of course;index as i" >
+    <div *ngIf="i==0 || i==3"> {{item}} 
+
+    </div>
+
+  </li>
+</ul> -->
+<hr>
+
+<table border="1px">
+  <thead>
+    <th>#</th>
+    <th>Product Name</th>
+    <th> Quantity </th>
+    <th> Weight </th>
+    <th> Price </th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of product;index as i">
+      <td> {{i+1}} </td>
+      <td> {{item.Name}} </td>
+      <td> {{item.quantity}} </td>
+      <td> {{item.weight}} </td>
+      <td> {{item.price}} </td>
+    </tr>
+
+  </tbody>
+</table>
+<hr>
+
+<table border="1px">
+    <thead>
+      <th>#</th>
+      <th>Product Name</th>
+      <th> Quantity </th>
+      <th> Weight </th>
+      <th> Price </th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of product;index as i" 
+      (mouseover)="onMouseOver(item)"
+      [ngClass]="{'highlight':selected==item.Name}"
+      >
+        <td> {{i+1}} </td>
+        <td> {{item.Name}} </td>
+        <td> {{item.quantity}} </td>
+        <td> {{item.weight}} </td>
+        <td> {{item.price}} </td>
+      </tr>
+  
+    </tbody>
+  </table>
