@@ -1,0 +1,19 @@
+<p>
+  twoway-binding works!
+</p>
+
+<input type="text" placeholder="Enter the Text...." [(ngModel)]="myname">
+
+{{myname}} <br> <br>
+
+<input type="text" [(ngModel)]="myname1"> <br> <br>
+
+<input type="text" placeholder="Output is......" [value]="myname1">
+<hr> <hr>
+<input type="text" [(ngModel)]="divtext">
+<button (click)="onDisplay()">Display data</button>
+
+<div [hidden]="ishidden">
+  {{divtext}}
+
+</div>

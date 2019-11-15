@@ -1,0 +1,37 @@
+<p>
+  ifdirective works!
+</p>
+
+<div *ngIf="rating<5"> Condition is True
+
+</div> 
+<hr>
+
+<div *ngIf="rating<5; else elsepart"> check if condtion is True!!!!!!
+
+</div>
+
+<!-- <div #elsepart>
+  Else Condition
+</div> -->
+
+<ng-template #elsepart> Call ng Template i.e Else Part</ng-template>
+
+<hr><hr>
+<h2> Use 2 Ng Template</h2>
+
+
+<div *ngIf="rating<5;then mainpart else elsepart1">
+ 
+
+</div>
+
+<ng-template #mainpart>
+  condition true it is Main part!!!!
+
+</ng-template>
+
+<ng-template #elsepart1>
+    condition false it is Else part
+</ng-template>
+

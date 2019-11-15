@@ -1,0 +1,22 @@
+<p>
+  template-ref works!
+</p>
+
+<input #myinput type="text" placeholder="Enter the Name!!"> <br>
+
+<button (click)="OnClick(myinput.value)"> Click me  </button> <br>
+
+<br>
+<input #myinput1 type="text" placeholder="Enter the Name!!"> <br>
+
+<button (click)="OnClick(myinput1.value)"> Click me  </button>
+
+{{Name}} <br><br>
+
+<input #myinput2 type="text" placeholder="Enter the Name !!!">
+<button (click)="OnClick1(myinput2.value)"> Click Me </button> <br>
+<input type="text" [value]="myName"> <br><br>
+
+<input #myinput3 type="text" placeholder="Enter the Name!!!">
+<button (click)="onClick2(myinput3)">Click ME</button>
+{{Name1}}
