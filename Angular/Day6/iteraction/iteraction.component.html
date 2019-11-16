@@ -1,0 +1,39 @@
+<p>
+  iteraction works!
+</p>
+<h1>Parent Component</h1>
+
+<!-- <app-itera-child [paraentdat]="msg"></app-itera-child> -->
+
+<!-- <app-itera-child [paraentdata1]="myobj"></app-itera-child> -->
+
+<app-itera-child [paraentdata2]="arrobj"></app-itera-child>
+
+
+<hr>
+
+{{msgdata}}
+
+<h2> {{dataobj.company}} </h2>
+<h2> {{dataobj.turnover}} </h2>
+<h2> {{dataobj.rank}} </h2>
+
+<br><br>
+
+<ul>
+  <li *ngFor="let item of Arrobj">
+    {{item.company}} <br>
+    {{item.turnover}} <br>
+    {{item.rank}}
+
+  </li>
+</ul>
+
+<hr>
+<!-- 
+<app-outputtest (childtoparentdata)="msgdata=$event"></app-outputtest> -->
+
+
+<!-- <app-outputtest (childobj)="dataobj=$event"></app-outputtest> -->
+
+<app-outputtest (childArrObj)="Arrobj=$event"></app-outputtest>

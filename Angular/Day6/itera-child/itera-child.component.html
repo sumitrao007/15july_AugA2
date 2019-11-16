@@ -1,0 +1,29 @@
+<hr>
+<p>
+  itera-child works!
+</p>
+
+<!-- <h1> {{paraentdat}} </h1> -->
+
+<h2> {{paraentdata1.name}} </h2>
+<h2> {{paraentdata1.addr}} </h2>
+<h2> {{paraentdata1.pincode}} </h2>
+
+
+<table>
+  <thead>
+    <th>#</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Pincode</th>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of paraentdata2;index as i">
+      <td> {{i+1}} </td>
+      <td> {{item.name}} </td>
+      <td> {{item.addr}} </td>
+      <td> {{item.pincode}} </td>
+    </tr>
+  </tbody>
+</table>
