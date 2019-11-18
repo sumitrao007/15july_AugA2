@@ -1,0 +1,10 @@
+ul{
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+}
+button{
+    margin: 10px;
+}
