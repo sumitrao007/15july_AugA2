@@ -1,0 +1,49 @@
+<p>
+  http-demo works!
+</p>
+<label for="">
+  Title:
+</label>
+<input #mytitle type="text" placeholder="Enter the Title..."> <br><br>
+<input #mybody type="text" placeholder="Enter the Body....">
+<button (click)="Adddata(mytitle.value,mybody.value)"> Add Data </button>
+<hr>
+
+
+<div [hidden]="ishidden">
+    <h2>Update The data</h2>
+<label for="">ID:</label>
+<input type="text" name="" id="" value=""  [(ngModel)]="myid1" readonly><br>
+<label for="">Title:</label>
+<input type="text" name="" id="" value="" [(ngModel)]="mytitle1"><br>
+<label for="">Body:</label>
+<input type="text" name="" id="" value="" [(ngModel)]="mybody1"><br>
+
+<button (click)="update()">UPDATE</button>
+
+</div>
+
+
+<hr><br>
+<table>
+  <thead>
+    <th>#</th>
+    <th>ID</th>
+    <th>Action </th>
+    <th>Title</th>
+    <th>Body</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of posts; index as i"> 
+      <td> {{i+1}} </td>
+      <td> {{item.id}} </td>
+      <td> <button (click)="OnUpdate(item)">Update</button>
+      <button (click)="onDelete(item)">Delete</button>
+      </td>
+      <td> {{item.title}} </td>
+      <td> {{item.body}} </td>
+
+    </tr>
+  </tbody>
+
+</table>
